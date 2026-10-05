@@ -13,8 +13,16 @@ filename = "shopping.txt"
 write_shopping_list(items,filename)
 # Exercise 2
 def read_names(filename):
-    # Write your code here
-    pass
+    file = open(filename, "r")
+    lst =[]
+    lines = file.readlines()
+    for line in lines:
+        if line.strip()!="":
+            lst.append(line>strip())
+    file.close()
+    return lst
+    
+print(read_names("test.txt"))
 
 # Exercise 3
 def append_entry(filename, text):
