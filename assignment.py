@@ -6,11 +6,11 @@ def write_shopping_list(items, filename):
     for i in items:
         file.write(f"{c}. {i}\n")
         c=c+1
-        file.close()
+    file.close()
 
-        items = ["Bread", "Milk", "Eggs"]
-        filename = "shopping.txt"
-        write_shopping_list(items.filename)
+items = ["Bread", "Milk", "Eggs"]
+filename = "shopping.txt"
+write_shopping_list(items.filename)
 # Exercise 2
 def read_names(filename):
     # Write your code here
