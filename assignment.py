@@ -18,7 +18,7 @@ def read_names(filename):
     lines = file.readlines()
     for line in lines:
         if line.strip()!="":
-            lst.append(line>strip())
+            lst.append(line.strip())
     file.close()
     return lst
     
