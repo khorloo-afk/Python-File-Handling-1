@@ -35,9 +35,17 @@ def append_entry(filename, text):
     return len(lines)
 # Exercise 4
 def search_file(filename, word):
-    # Write your code here
-    pass
+    result = []
+    file = open(filename, "r")
+    lines = file.readlines()
+    file.close()
+    number = 1
+    for line in lines:
+        if word.lower() in line.lower():
+            result.append(number)
+        number += 1
 
+    return result
 # Exercise 5
 def number_the_lines(source, destination):
     # Write your code here
