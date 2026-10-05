@@ -21,8 +21,9 @@ def read_names(filename):
             lst.append(line.strip())
     file.close()
     return lst
-    
+
 print(read_names("test.txt"))
+
 
 # Exercise 3
 def append_entry(filename, text):
